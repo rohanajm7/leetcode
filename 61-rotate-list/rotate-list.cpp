@@ -22,6 +22,9 @@ public:
         }
 
         int pos = k%count;
+        if(pos == 0){
+            return head;
+        }
         ListNode* dummy = new ListNode();
         dummy->next = head;
         ListNode* fast = dummy;
